@@ -1,62 +1,62 @@
 class CashRegister 
 
-  attr_accessor :discount 
+#   attr_accessor :discount 
 
-  #attr_accessor :cashregister
+#   #attr_accessor :cashregister
   
-  def initialize(discount = 0)  
-   @total = 0 
-   @discount = discount 
+#   def initialize(discount = 0)  
+#   @total = 0 
+#   @discount = discount 
 
-  end   
+#   end   
   
-  #def new 
+#   #def new 
   
-  #end   
+#   #end   
   
- def total=(number)
-   @total=number
+# def total=(number)
+#   @total=number
    
    
-    #cash_register.total = 100
- end 
+#     #cash_register.total = 100
+# end 
   
-  def total 
-  @total
-  end 
+#   def total 
+#   @total
+#   end 
   
-  def add_item(title, price, quantity=1)
-    @total += price * quantity
+#   def add_item(title, price, quantity=1)
+#     @total += price * quantity
     
- end
+# end
  
- def apply_discount
-   # applies the discount to the total price 
+# def apply_discount
+#   # applies the discount to the total price 
    
-  if discount != 0 
+#   if discount != 0 
    
-  self.total = (total * ((100.0 - discount.to_f)/100)).to_i
-  "After the discount, the total comes to $#{self.total}."
-else 
-   "There is no discount to apply."
+#   self.total = (total * ((100.0 - discount.to_f)/100)).to_i
+#   "After the discount, the total comes to $#{self.total}."
+# else 
+#   "There is no discount to apply."
 
- end
- end 
+# end
+# end 
  
- def items
-  #returns an array containing all items that have been added
+# def items
+#   #returns an array containing all items that have been added
   
-   add_item
- end 
+#   add_item
+# end 
  
-#def void_last_transaction
-     # self.total = self.total - self.last_transaction 
+# #def void_last_transaction
+#     # self.total = self.total - self.last_transaction 
 
 
-#end 
+# #end 
 
  
-end   
+# end   
 
 
 
